@@ -1,0 +1,24 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 3.878 s <<< FAILURE! - in TestSuite
+io.testscripts.Companies.addCompany[{quantityprecesion1=, country=600028, Sanity=NO, Email=qmsone@gmail.com, mobilenumber=91, isocode=9600666999, city=chennai, phonenumber=484, firstmonthoffiscalyear=2, firstmonthofincometaxyear=2, Url=https://qa-accounts.api.mousiki.io/api/v1/company, Name=Automation, businesstype=, displayAs=A.T, companytypeid=1, parentcompany=4, addressLine1=Line2, addressLine2=chennai, state=India, fax=ab2@gmail.com, email=www.ab2.com, Password=Test@123, TestName=addCompany, website=2, countryofbusinessid=99, quantityprecesion=Line1, isocode1=FAX1234, Regression=YES, Functional=NO, zipcode=9600999666, primarycurrencyid=5, accountingmethodid=63, district=TN, Id=1, taxinfo=2}, org.testng.TestRunner@3a945a2b](1)  Time elapsed: 0.009 s  <<< FAILURE!
+java.lang.NullPointerException: Cannot invoke "Object.toString()" because the return value of "java.util.Map.get(Object)" is null
+	at io.automation.pojo.CompanyAPI.generateCompanyApi(CompanyAPI.java:49)
+	at io.testscripts.Companies.addCompany(Companies.java:61)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:80)
+	at org.testng.internal.invokers.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:17)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+

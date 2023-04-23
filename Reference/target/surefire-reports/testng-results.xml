@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-04-19T19:39:36 IST" name="Regress" finished-at="2023-04-19T19:39:40 IST" duration-ms="3705">
+    <groups>
+    </groups>
+    <test started-at="2023-04-19T19:39:36 IST" name="Companies" finished-at="2023-04-19T19:39:40 IST" duration-ms="3705">
+      <class name="io.testscripts.Companies">
+        <test-method is-config="true" signature="beforeSuite(org.testng.ITestContext)[pri:0, instance:io.testscripts.Companies@77a7cf58]" started-at="2023-04-19T19:39:36 IST" name="beforeSuite" finished-at="2023-04-19T19:39:36 IST" duration-ms="10" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@54f2ec1c]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeSuite -->
+        <test-method is-config="true" signature="properties()[pri:0, instance:io.testscripts.Companies@77a7cf58]" started-at="2023-04-19T19:39:36 IST" name="properties" finished-at="2023-04-19T19:39:36 IST" duration-ms="7" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- properties -->
+        <test-method signature="authenticateUser(java.util.Map,org.testng.ITestContext)[pri:-1, instance:io.testscripts.Companies@77a7cf58]" started-at="2023-04-19T19:39:37 IST" name="authenticateUser" data-provider="mytestdata" finished-at="2023-04-19T19:39:39 IST" duration-ms="2467" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{country=, Sanity=NO, Email=musica@gmail.com, mobilenumber=, isocode=, city=, cst=, phonenumber=, firstmonthoffiscalyear=, firstmonthofincometaxyear=, gst=, isdeleted=, Url=https://www.googleapis.com/identitytoolkit/v3/relyingparty/verifyPassword?key=AIzaSyD7oMsXvjTMB0S3Xwbm0wV0ycQvE8AZiig, tin1=, Name=, businesstype=, hasproductcatalog1=, displayAs=, companytypeid=, tin=, addressLine1=, logo=, addressLine2=, state=, fax=, pan=, allowwholesale1=, email=, Password=Test@123, hasproductcatalog=, TestName=authenticateUser, website=, parentcompanyid=, countryofbusinessid=, isocode1=, Regression=YES, allowwholesale=, quantityprecision1=, Functional=NO, zipcode=, quantityprecision=, primarycurrencyid=, accountingmethodid=, district=, Id=, isbranch=}]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@54f2ec1c]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- authenticateUser -->
+        <test-method is-config="true" signature="closebrowser()[pri:0, instance:io.testscripts.Companies@77a7cf58]" started-at="2023-04-19T19:39:39 IST" name="closebrowser" finished-at="2023-04-19T19:39:39 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closebrowser -->
+        <test-method signature="addCompany(java.util.Map,org.testng.ITestContext)[pri:0, instance:io.testscripts.Companies@77a7cf58]" started-at="2023-04-19T19:39:39 IST" name="addCompany" data-provider="mytestdata" finished-at="2023-04-19T19:39:40 IST" duration-ms="430" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{country=63, Sanity=NO, Email=musica@gmail.com, mobilenumber=9600666999, isocode=484, city=chennai, cst=, phonenumber=9600999666, firstmonthoffiscalyear=2, firstmonthofincometaxyear=2, gst=, isdeleted=, Url=https://qa-accounts.api.mousiki.io/api/v1/company, tin1=, Name=Automation, businesstype=2, hasproductcatalog1=, displayAs=company, companytypeid=4, tin=, addressLine1=Line1, logo=, addressLine2=Line2, state=TN, fax=FAX1234, pan=, allowwholesale1=, email=ab2@gmail.com, Password=Test@123, hasproductcatalog=, TestName=addCompany, website=www.ab2.com, parentcompanyid=, countryofbusinessid=99, isocode1=91, Regression=YES, allowwholesale=, quantityprecision1=2, Functional=NO, zipcode=600028, quantityprecision=5, primarycurrencyid=63, accountingmethodid=1, district=chennai, Id=52, isbranch=}]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@54f2ec1c]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NumberFormatException">
+            <message>
+              <![CDATA[For input string: ""]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NumberFormatException: For input string: ""
+at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:67)
+at java.base/java.lang.Integer.parseInt(Integer.java:678)
+at java.base/java.lang.Integer.parseInt(Integer.java:786)
+at io.automation.pojo.CompanyAPI.generateCompanyApi(CompanyAPI.java:160)
+at io.testscripts.Companies.addCompany(Companies.java:88)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:80)
+at org.testng.internal.invokers.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:17)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NumberFormatException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addCompany -->
+        <test-method is-config="true" signature="closebrowser()[pri:0, instance:io.testscripts.Companies@77a7cf58]" started-at="2023-04-19T19:39:40 IST" name="closebrowser" finished-at="2023-04-19T19:39:40 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closebrowser -->
+        <test-method is-config="true" signature="backtohomepage()[pri:0, instance:io.testscripts.Companies@77a7cf58]" started-at="2023-04-19T19:39:40 IST" name="backtohomepage" finished-at="2023-04-19T19:39:40 IST" duration-ms="219" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- backtohomepage -->
+        <test-method is-config="true" signature="extentflush()[pri:0, instance:io.testscripts.Companies@77a7cf58]" started-at="2023-04-19T19:39:40 IST" name="extentflush" finished-at="2023-04-19T19:39:40 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- extentflush -->
+        <test-method is-config="true" signature="afterSuite(org.testng.ITestContext)[pri:0, instance:io.testscripts.Companies@77a7cf58]" started-at="2023-04-19T19:39:40 IST" name="afterSuite" finished-at="2023-04-19T19:39:40 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@54f2ec1c]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterSuite -->
+      </class> <!-- io.testscripts.Companies -->
+    </test> <!-- Companies -->
+  </suite> <!-- Regress -->
+</testng-results>

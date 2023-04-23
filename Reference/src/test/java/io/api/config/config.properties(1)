@@ -1,0 +1,22 @@
+#Extent Report Settings
+testreportname=Accounting Automation
+
+#Test Environment Configurations
+browsername=chrome
+OsName = Win
+
+#Application Configuration
+URL = https://qa.accounting.mousiki.io/
+PRODURL=https://accounting.mousiki.io/
+Username=Test
+password=test123
+
+#Wait Time configuration
+Implicitwait=10
+
+#DB Details
+#DBHostname=jdbc:mysql://18.222.19.86:3306/mousikiqa
+DBHostname=jdbc:mysql://mousikiqa-rds.cmpy4o83a7f1.us-east-2.rds.amazonaws.com:3306/mousikiqa-accounts
+DBUsername=mouqaadm
+DBPassword=qRVRza:qP8dknBg
+DBSCHEMA=`mousikiqa-accounts`

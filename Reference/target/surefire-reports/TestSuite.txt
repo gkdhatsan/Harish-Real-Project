@@ -1,0 +1,27 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 4.365 s <<< FAILURE! - in TestSuite
+io.testscripts.Companies.addCompany[{country=63, Sanity=NO, Email=musica@gmail.com, mobilenumber=9600666999, isocode=484, city=chennai, cst=, phonenumber=9600999666, firstmonthoffiscalyear=2, firstmonthofincometaxyear=2, gst=, isdeleted=, Url=https://qa-accounts.api.mousiki.io/api/v1/company, tin1=, Name=Automation, businesstype=2, hasproductcatalog1=, displayAs=company, companytypeid=4, tin=, addressLine1=Line1, logo=, addressLine2=Line2, state=TN, fax=FAX1234, pan=, allowwholesale1=, email=ab2@gmail.com, Password=Test@123, hasproductcatalog=, TestName=addCompany, website=www.ab2.com, parentcompanyid=, countryofbusinessid=99, isocode1=91, Regression=YES, allowwholesale=, quantityprecision1=2, Functional=NO, zipcode=600028, quantityprecision=5, primarycurrencyid=63, accountingmethodid=1, district=chennai, Id=52, isbranch=}, org.testng.TestRunner@54f2ec1c](1)  Time elapsed: 0.432 s  <<< FAILURE!
+java.lang.NumberFormatException: For input string: ""
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:67)
+	at java.base/java.lang.Integer.parseInt(Integer.java:678)
+	at java.base/java.lang.Integer.parseInt(Integer.java:786)
+	at io.automation.pojo.CompanyAPI.generateCompanyApi(CompanyAPI.java:160)
+	at io.testscripts.Companies.addCompany(Companies.java:88)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:80)
+	at org.testng.internal.invokers.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:17)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+
